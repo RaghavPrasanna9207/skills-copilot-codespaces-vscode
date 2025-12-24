@@ -75,8 +75,11 @@ function calculate() {
             break;
         case '/':
             if (current === 0) {
-                alert('Cannot divide by zero');
-                clearDisplay();
+                currentInput = 'Error';
+                operator = null;
+                previousInput = '';
+                shouldResetDisplay = true;
+                updateDisplay();
                 return;
             }
             result = prev / current;
