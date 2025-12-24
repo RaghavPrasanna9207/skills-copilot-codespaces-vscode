@@ -75,7 +75,7 @@ function calculate() {
             break;
         case '/':
             if (current === 0) {
-                currentInput = 'Error';
+                currentInput = 'Cannot divide by 0';
                 operator = null;
                 previousInput = '';
                 shouldResetDisplay = true;
